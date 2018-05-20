@@ -1,26 +1,33 @@
-# # # # # # # # # # # # # # # # # INITIAL C # # # # # # # # # # # # # # # # # # # 
-#04-ago-17
-# Alternativas de condicionales iniciales de los acoples y/o magnetizaciones - tipe:
-# a1 = todos igual a cero.
-# a2 = todos igual al vector de medias para h0 y a la mtriz de correlaciones para J
-# a3 = las magnetizaciones iniciales h0 son igual a log(pi/(1-pi)) donde pi es la proporcion
-#      de spines 1 en la variable i. Los acoples J0 igual a la matriz de correlaciones
-# a4 = las magnetizaciones iniciales son iguales a log(pi((1-pi))) donde pi es la prob. que 
-#      spin este activada (Si=1). Los acoples son iguales a 0. Se necesita como input la 
-#      la matriz de datos 
-# a5 = la matriz de acople son valores aleatorios de una gaussiana con media igual a 0 y 
-#      desv. estandar igual a desv. y las magnetizaciones todas igual a cero.
 
-#INPUTS:
-#  * randomon = obtiene un valor aleatorio de un valor de una gaussiana con media igual al valor 
-#  y desv. estandar igual a 0.05 (on, off)
-#  * si y sij = vector sigma_i_data y matriz sigma_ij_data de magnetizaciones y correlaciones de la data
-#  * df = data original con spines 1 y -1.
-#  * N = numero de nodos o variables
-# * desv = desviacion estandar en caso que tipe = a5
+# This function allows you to declare the initial conditions of the couplings and
+# the magnetizations to start the learning process.
 
+# Inputs:
+# tipe: character indicanting one of the five alternatives:
+# 
+# a1 = couplings and megnetizations iqual to zero.
+# a2 = couplings equal to the matrix input sij (correlation matrix) and 
+#      magnetizations equal to vector si (averages of spins)
+# a3 = couplings equal to the matrix input sij (correlation matrix) and 
+#      magnetizations equal to  log(pi/(1-pi)) where p1 is the proportion
+#      of spins in "on state" (1) of the ith variable.
+#      In this case, input df (matrix with spins).
+# a4 = couplings are zero and magnetizations equal to  log(pi/(1-pi)) where 
+#      p1 is the proportion of spins in "on state" (1) of the ith variable.
+#      In this case, input df (matrix with spins).
+# a5 = couplings are random values from a normal disgtribution with zero mean
+#      and standard deviation of "desv" (usually 0.05). Magnetizations
+#      are zero.
+# More Inputs:
+#  * si y sij = average of spins (column means of input df) and correaltion
+#      matrix of input df.
+#  * df = original data matriz with spins  1 y -1.
+#  * N = number of variables or nodes
+#  * desv = standard deviation for tipe="a5".
 #OUTPUTS:
-#  * ho y J0 : vector y matriz inicial de magnetizacion y acoples.
+#  * ho y J0 : vector and matrix for initial conditions of magnetizations and 
+#    couplings respectively. 
+
 initial_conditions <- function(df=NULL, N, tipe, si, sij, desv) {
   require(Matrix)
   if (tipe == 'a1') {
@@ -52,4 +59,3 @@ initial_conditions <- function(df=NULL, N, tipe, si, sij, desv) {
   }
   return(list(h0, J0))
 }
-# # # # # # # # # # # # # # # # # CONDICIONES INCIALES # # # # # # # # # # # # # # # # # # # 
