@@ -1,0 +1,9 @@
+Este folder fue creado el 17 de enero 2017.
+Este folder esta conectado con GitHub repositorio 
+https://github.com/MAValle/BoltzmannMachine.
+
+Este folder mantiene el proyecto que contiene las funciones
+para la maquina de Boltzmann que originalmente fue creado para el paper
+de ISING en  Dropbox/research/PAPER MST_Fondecyt_2/Data.
+
+% % % % 
