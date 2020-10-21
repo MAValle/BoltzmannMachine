@@ -48,7 +48,7 @@ Inputs:
 * umbral: Threshold to measure KL divergence (see kullback_leibler_function.R)
 * every: cada cuantas iteraciones medir el KL.
 
-
+```
 `machine_results <- bmachine(condInitial = "a2", 
                             muestra = data, 
                             Kmax = 25000, 
