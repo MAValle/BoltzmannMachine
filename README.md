@@ -51,25 +51,15 @@ Inputs:
 
 
 `machine_results <- bmachine(condInitial = "a2", 
-
                             muestra = data, 
-                            
                             Kmax = 25000, 
-                            
                             metrop_its = 1519, 
-                            
                             LearningRate = 0.95, 
-                            
                             decay = 0.0004, 
-                            
-                            N_sa = 10, 
-                            
-                            umbral = 0.8, 
-                            
-                            every = 20, 
-                            
-                            hg = NULL, 
-                            
+                            N_sa = 10,          
+                            umbral = 0.8,                 
+                            every = 20,                         
+                            hg = NULL,                       
                             Jg = NULL)`
                             
 
