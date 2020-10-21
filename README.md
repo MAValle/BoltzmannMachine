@@ -8,7 +8,7 @@ Dependences:
   
   -> learning_par_function.R
   
-  -> contarstive_divergence_function.R
+  -> contrastive_divergence_function.R
   
   -> kullback_leibler_function.R (kullback3 is used)
   
