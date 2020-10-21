@@ -3,22 +3,33 @@ Set of functions in R to carry out Boltzmann Learning.
 
 Dependences:
 * bmachine_function.R 
+
   -> initial_conditions_function.R
+  
   -> learning_par_function.R
+  
   -> contarstive_divergence_function.R
+  
   -> kullback_leibler_function.R (kullback3 is used)
+  
   -> metropolis_sampling_function.R
   
 * kullback_leibler_function.R 
+
   -> frecuency_function.R
 
 * metropolis_sampling_function.R
+
   -> tempfunc_function.R
+  
   -> sweep_function.R
+  
   -> goodness_function.R
   
 * sweep_function.R
+
   -> activation_energy_function.R
+  
   -> activiation_probability_function.R
   
 
