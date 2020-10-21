@@ -65,16 +65,11 @@ Inputs:
 
 Information retrieving:
 
-`just_for_track <- machine_results[[1]]
-
-diver <- machine_results[[2]]
-
-cd <- machine_results[[3]]  
-
-cd2 <- machine_results[[8]] 
-
-H <- machine_results[[4]]
-
-J <- machine_results[[5]]`
+`just_for_track <- machine_results[[1]]`
+`diver <- machine_results[[2]]`
+`cd <- machine_results[[3]]`  
+`cd2 <- machine_results[[8]]` 
+`H <- machine_results[[4]]`
+`J <- machine_results[[5]]`
 
 
