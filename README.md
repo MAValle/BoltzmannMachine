@@ -49,6 +49,14 @@ Inputs:
 * every: cada cuantas iteraciones medir el KL.
 
 
+	```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
 
 `machine_results <- bmachine(condInitial = "a2", 
                             muestra = data, 
