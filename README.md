@@ -46,7 +46,7 @@ Inputs:
 * decay: decay for learning parameter (see learning_par_function.R) 
 * N_sa: Number of samples for the negative phase.
 * umbral: Threshold to measure KL divergence (see kullback_leibler_function.R)
-* every: cada cuantas iteraciones medir el KL.
+* every: each how many iterations measure the KL divergence.
 
 ```
 `machine_results <- bmachine(condInitial = "a2", 
