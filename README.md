@@ -49,6 +49,14 @@ Inputs:
 * every: each how many iterations measure the KL divergence.
 
 ```
+library(dplyr)
+library(entropy)
+library(philentropy)
+library(gdata)
+library(progress)
+library(Matrix)
+
+
 `machine_results <- bmachine(condInitial = "a2", 
                             muestra = data, 
                             Kmax = 25000, 
