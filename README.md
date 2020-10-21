@@ -49,7 +49,8 @@ Inputs:
 * every: cada cuantas iteraciones medir el KL.
 
 
-``machine_results <- bmachine(condInitial = "a2", 
+
+`machine_results <- bmachine(condInitial = "a2", 
 
                             muestra = data, 
                             
@@ -69,12 +70,12 @@ Inputs:
                             
                             hg = NULL, 
                             
-                            Jg = NULL)
+                            Jg = NULL)`
                             
 
 Information retrieving:
 
-just_for_track <- machine_results[[1]]
+`just_for_track <- machine_results[[1]]
 
 diver <- machine_results[[2]]
 
@@ -84,6 +85,6 @@ cd2 <- machine_results[[8]]
 
 H <- machine_results[[4]]
 
-J <- machine_results[[5]]
+J <- machine_results[[5]]`
 
 
