@@ -50,23 +50,40 @@ Inputs:
 
 
 machine_results <- bmachine(condInitial = "a2", 
+
                             muestra = data, 
+                            
                             Kmax = 25000, 
+                            
                             metrop_its = 1519, 
+                            
                             LearningRate = 0.95, 
+                            
                             decay = 0.0004, 
+                            
                             N_sa = 10, 
+                            
                             umbral = 0.8, 
+                            
                             every = 20, 
+                            
                             hg = NULL, 
+                            
                             Jg = NULL)
+                            
 
 Information retrieving:
+
 just_for_track <- machine_results[[1]]
+
 diver <- machine_results[[2]]
+
 cd <- machine_results[[3]]  
+
 cd2 <- machine_results[[8]] 
+
 H <- machine_results[[4]]
+
 J <- machine_results[[5]]
 
 
